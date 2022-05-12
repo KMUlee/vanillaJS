@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Web Interaction</title>
+        <link rel="stylesheet" type="text/css" href="modal_s.css">
+        <link rel="stylesheet" type="text/css" href="side-menu_s.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <button id="open">:::</button>
+                <h1>MyWeb</h1>
+            </header>
+            <section>
+                <h3>내 시간 주고 공부한 내 웹사이트</h1>
+            </section>
+        </div>
+        <div class="side-menu" id="side_menu">
+            <div class="side-menu-header">
+                <h1>Menu</h1>
+                <button id="close_menu">X</button>
+            </div>
+            <section class="side-menu-content">
+                <ui>
+                    <li><h onclick="handleModal()">Modal</h></li>
+                    <li></li>
+                    <li></li>
+                </ui>
+            </section>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-overay" id="overay"></div>
+            <div class="modal-content" id="content">
+                <h1>I'm a modal</h1>
+                <button id="close">X</button>
+            </div>
+        </div>
+    </body>
+    <script src="./modal.js?v=2021"></script>
+    <script src="./side_menu.js"></script>
+</html>

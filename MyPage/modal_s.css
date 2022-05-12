@@ -1,0 +1,91 @@
+body {
+  margin: 0 0 0 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container header {
+  display: flex;
+  background: powderblue;
+  color: white;
+  align-items: center;
+  height: 85px;
+}
+
+.container button {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: white;
+  font-size: 2.5rem;
+  width: 60px;
+  height: 80px;
+  border: 0;
+  background: powderblue;
+}
+
+.container button:hover {
+  cursor: pointer;
+  background-color: rgb(150, 210, 218);
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.open {
+  left: 0;
+}
+
+.modal-overay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.modal-overay.open {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.modal-content {
+  position: relative;
+  padding: 50px 100px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0;
+}
+
+.modal-content.open {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
+.modal-content button {
+  border: 0;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.3rem;
+  padding: 0 0;
+  background-color: tomato;
+  color: white;
+}
+
+.modal-content button:hover {
+  cursor: pointer;
+}
