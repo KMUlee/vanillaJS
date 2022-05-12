@@ -1,0 +1,52 @@
+.side-menu {
+  position: fixed;
+  top: 85;
+  left: -200px;
+  background-color: powderblue;
+  color: white;
+  width: 200px;
+  height: 100%;
+  transform: translate(0, 0);
+  transition: transform 300ms;
+}
+
+.side-menu.open {
+  box-shadow: 3px 1px 10px 0px rgba(0, 0, 0, 0.3);
+  transform: translate(200px, 0);
+}
+
+.side-menu-header {
+  display: flex;
+  align-items: center;
+}
+
+.side-menu-header h1 {
+  width: 50%;
+  padding-left: 10px;
+  margin: 5 0;
+}
+
+.side-menu-header button {
+  border: 0;
+  color: white;
+  font-size: 2rem;
+  background-color: powderblue;
+  margin-left: 20%;
+  padding: 0 0;
+  width: 30%;
+  height: 53px;
+}
+
+.side-menu-header button:hover {
+  background-color: rgb(150, 210, 218);
+}
+
+.side-menu-content {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  margin-left: 25px;
+}
+
+.side-menu-content h:hover {
+  cursor: pointer;
+}
